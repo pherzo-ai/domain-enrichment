@@ -1,0 +1,14 @@
+{
+  "keep": [
+    [
+      "telemundoentumundo.com",
+      "broaden: RegistrantContact.Email~'@nbcuni.com'"
+    ]
+  ],
+  "dropped_noise": [
+    "RegistrantContact.Organization 'NBCUniversal' = 10000 registry/customer noise (excluded)"
+  ],
+  "strategies_used": [
+    "RegistrantContact.Email~'@nbcuni.com'"
+  ]
+}

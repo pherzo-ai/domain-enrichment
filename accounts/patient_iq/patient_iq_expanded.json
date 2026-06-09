@@ -1,0 +1,10 @@
+{
+  "PatientIQ": {
+    "nextPageSearchAfter": null,
+    "domainsCount": 2,
+    "domainsList": [
+      "piq.us",
+      "patientiq.us"
+    ]
+  }
+}

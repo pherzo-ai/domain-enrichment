@@ -1,0 +1,24 @@
+{
+  "keep": [
+    [
+      "poetic.io",
+      "broaden: org~'Poetic Systems'"
+    ],
+    [
+      "poeticsystems.com",
+      "broaden: org~'Poetic Systems'"
+    ],
+    [
+      "poeticcloud.com",
+      "broaden: org~'Poetic Systems'"
+    ],
+    [
+      "katzcoffeeporterparty.com",
+      "broaden: org~'Poetic Systems'"
+    ]
+  ],
+  "dropped_noise": [],
+  "strategies_used": [
+    "RegistrantContact.Organization~'Poetic Systems'"
+  ]
+}

@@ -1,0 +1,14 @@
+{
+  "keep": [
+    [
+      "onlocationexp.org",
+      "broaden: org~'On Location' filtered to onlocationexp"
+    ]
+  ],
+  "dropped_noise": [
+    "46 unrelated 'on location' businesses (photography, catering, nursing, tires, etc.)"
+  ],
+  "strategies_used": [
+    "RegistrantContact.Organization~'On Location' (filtered)"
+  ]
+}

@@ -1,0 +1,22 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+venv/
+env/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Logs / scratch
+*.log
+nohup.out
+
+# Local secrets (if you later move the key out of code)
+.env
+.env.*
+
+# Note: generated data (accounts/, master_*.csv, live_domains.csv,
+# site_check_results.csv) is intentionally tracked in this repo.

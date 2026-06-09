@@ -1,0 +1,17 @@
+{
+  "keep": [
+    [
+      "nirvanatech.com",
+      "forward-WHOIS: registrant org 'Nirvana Tech' (CA, US)"
+    ],
+    [
+      "nirvana-insurance.com",
+      "web-confirmed marketing site (WHOIS privacy: Domains By Proxy)"
+    ]
+  ],
+  "methods": {
+    "forward_whois": "nirvanatech.com registrant org = 'Nirvana Tech' (CA, US), registrar Squarespace, AWS DNS; nirvana-insurance.com privacy-protected (Domains By Proxy)",
+    "reverse_whois_pivot": "org 'Nirvana Tech' returns only a DIFFERENT Indian company (nirvanatechlabs.in, nirvanasupplements.com.au) - not merged",
+    "cert_transparency": "crt.sh for both domains shows certs only for their own apex - no sibling apexes found"
+  }
+}

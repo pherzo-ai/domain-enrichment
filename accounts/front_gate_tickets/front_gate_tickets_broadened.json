@@ -1,0 +1,13 @@
+{
+  "keep": [
+    [
+      "frontgatetickets.ca",
+      "broaden: name/basic 'Front Gate Tickets'"
+    ]
+  ],
+  "dropped_noise": [],
+  "strategies_used": [
+    "RegistrantContact.Name~'Front Gate'",
+    "basic include ['Front Gate Tickets']"
+  ]
+}

@@ -1,0 +1,20 @@
+{
+  "keep": [
+    [
+      "qualified.com",
+      "broaden: basic ['Qualified.com'] filtered"
+    ],
+    [
+      "codewars.dev",
+      "broaden: org~'Qualified, Inc'"
+    ]
+  ],
+  "dropped_noise": [
+    "108 unrelated '*-qualified.com' parking domains",
+    "65 unrelated 'Qualified' registrant-name domains"
+  ],
+  "strategies_used": [
+    "basic include ['Qualified.com'] (filtered)",
+    "RegistrantContact.Organization~'Qualified, Inc'"
+  ]
+}

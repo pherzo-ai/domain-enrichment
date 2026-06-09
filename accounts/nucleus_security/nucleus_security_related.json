@@ -1,0 +1,13 @@
+{
+  "keep": [
+    [
+      "nucleussec.com",
+      "web-confirmed primary domain (WHOIS privacy: Withheld for Privacy, Cloudflare DNS)"
+    ]
+  ],
+  "methods": {
+    "forward_whois": "nucleussec.com privacy-protected (Withheld for Privacy ehf / Namecheap), Cloudflare DNS - no registrant identifiers exposed",
+    "reverse_whois_pivot": "no usable identifier; generic 'Nucleus' org = 688 unrelated companies (not merged)",
+    "cert_transparency": "crt.sh shows certs only for nucleussec.com - no sibling apexes found"
+  }
+}

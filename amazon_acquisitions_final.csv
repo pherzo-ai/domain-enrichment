@@ -1,0 +1,16 @@
+domain,http_status,https_status,redirect_url
+dbbest.com,301,,
+dbbest.net,301,,
+fauna.com,200,,https://faunarobotics.com/
+fauna.net,200,,https://faunarobotics.com/
+inlt.com,200,200,https://inlt.com/
+pillpack.pharmacy,200,,https://www.pillpack.com/
+umbra3d.com,200,200,https://umbra3d.com/
+viziotix.com,200,200,https://viziotix.com/
+woot.nyc,200,,https://www.woot.com:443/
+zoox.com,200,200,https://zoox.com/
+zoox.design,200,200,
+zoox.live,200,200,
+zooxautomobile.ai,200,200,https://zoox.com/
+zooxcars.ai,200,200,https://zoox.com/
+zooxcars.io,200,200,https://zoox.com/
