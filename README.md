@@ -5,8 +5,6 @@ list of companies, using the [WhoisXMLAPI Reverse WHOIS](https://reverse-whois.w
 service. It produces a tidy per-account folder structure (CSV / TXT / raw JSON),
 a combined master CSV, and an optional "is the site live?" content check.
 
-> This started as an Amazon-only experiment and grew into a general, reusable
-> apex-domain research pipeline for an arbitrary list of accounts.
 
 ---
 
