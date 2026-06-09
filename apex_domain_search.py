@@ -17,6 +17,7 @@ Usage:
 import argparse
 import csv
 import json
+import os
 import re
 import sys
 import time
@@ -24,7 +25,10 @@ import urllib.request
 from pathlib import Path
 
 API_URL = "https://reverse-whois.whoisxmlapi.com/api/v2"
-API_KEY = "at_AqNT93oHzOA9awbHMCfqqE0jUjdjh"
+API_KEY = os.environ.get("WHOISXML_API_KEY")
+if not API_KEY:
+    sys.exit("Error: set the WHOISXML_API_KEY environment variable "
+             "(e.g. export WHOISXML_API_KEY='your-key').")
 OUTPUT_ROOT = Path("accounts")
 
 ACCOUNTS = [

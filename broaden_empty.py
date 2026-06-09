@@ -16,6 +16,7 @@ Usage:
 import argparse
 import csv
 import json
+import os
 import time
 import urllib.request
 from pathlib import Path
@@ -23,7 +24,7 @@ from pathlib import Path
 from apex_domain_search import apex_domains, slugify, OUTPUT_ROOT
 
 API_URL = "https://reverse-whois.whoisxmlapi.com/api/v2"
-API_KEY = "at_AqNT93oHzOA9awbHMCfqqE0jUjdjh"
+API_KEY = os.environ["WHOISXML_API_KEY"]
 SKIP_ABOVE = 9999  # capped API result = registry/customer noise
 
 # Per account: list of strategies. Each strategy is a dict:

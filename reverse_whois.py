@@ -4,12 +4,16 @@ Reverse WHOIS lookup via WhoisXMLAPI.
 Usage: python reverse_whois.py "<organization name>" [--preview]
 """
 import json
+import os
 import sys
 import argparse
 import urllib.request
 
 API_URL = "https://reverse-whois.whoisxmlapi.com/api/v2"
-API_KEY = "at_AqNT93oHzOA9awbHMCfqqE0jUjdjh"
+API_KEY = os.environ.get("WHOISXML_API_KEY")
+if not API_KEY:
+    sys.exit("Error: set the WHOISXML_API_KEY environment variable "
+             "(e.g. export WHOISXML_API_KEY='your-key').")
 
 def query(org_name: str, preview: bool = False) -> dict:
     payload = {

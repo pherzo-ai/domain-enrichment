@@ -55,7 +55,17 @@ python3 -m pip install requests
 ```
 
 - A **WhoisXMLAPI** account with **DRS (Domain Research Suite) credits**. The API
-  key is currently set inside the scripts (see [Security note](#security-note-about-the-api-key)).
+  key is read from the `WHOISXML_API_KEY` environment variable
+  (see [Security note](#security-note-about-the-api-key)).
+
+Set the key before running any of the WHOIS scripts:
+
+```bash
+export WHOISXML_API_KEY="your-whoisxmlapi-key"
+```
+
+To persist it across terminal sessions, add that line to your `~/.zshrc` (or
+`~/.bashrc`). The scripts exit with a clear error if the variable is not set.
 
 ---
 
@@ -311,15 +321,20 @@ That means results depend on how a company filled in its WHOIS registrant data:
 
 ## Security note about the API key
 
-The WhoisXMLAPI key is currently **hard-coded** in the scripts
-(`API_KEY = "..."`). If you make this repository public, that key is exposed and
-anyone could spend your DRS credits.
+The WhoisXMLAPI key is **not stored in the code**. Every script reads it from the
+`WHOISXML_API_KEY` environment variable at runtime, so no secret is committed to
+this repository.
 
-Recommended hardening (optional):
+```bash
+export WHOISXML_API_KEY="your-whoisxmlapi-key"
+```
 
-- Rotate the key in your WhoisXMLAPI dashboard if it has been exposed.
-- Move it to an environment variable and read it with
-  `os.environ["WHOISXML_API_KEY"]`, keeping real values out of version control.
+Tips:
+
+- Keep the key in your shell profile (`~/.zshrc`) or a local `.env` file that is
+  git-ignored — never commit real values.
+- If the key was ever exposed (e.g. in earlier git history), rotate it in your
+  WhoisXMLAPI dashboard.
 
 ---
 
